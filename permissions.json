@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1560779582639",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Sid": "Stmt1560779669901",
+            "Action": [
+                "ec2:Describe*",
+                "ec2:StartInstances",
+                "ec2:StopInstances"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
